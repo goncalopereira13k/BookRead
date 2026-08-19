@@ -34,3 +34,7 @@ BookRead/
 ├── web-backoffice/   # Admin/backoffice web app (Next.js)
 └── mobile/           # Flutter mobile app
 ```
+
+## License
+
+MIT — see [LICENSE](./LICENSE).

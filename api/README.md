@@ -1,29 +1,65 @@
-# README #
+# BookRead API
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Backend REST API for BookRead, built with Express, Sequelize and PostgreSQL.
 
-### What is this repository for? ###
+## Requirements
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- Node.js 18+
+- A running PostgreSQL instance
 
-### How do I get set up? ###
+## Setup
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Install dependencies:
 
-### Contribution guidelines ###
+```bash
+npm install
+```
 
-* Writing tests
-* Code review
-* Other guidelines
+Create a `.env` file in this folder with:
 
-### Who do I talk to? ###
+```
+JWT_SECRET=<a long random string>
+DB_PASSWORD=<your postgres password>
+```
 
-* Repo owner or admin
-* Other community or team contact
+By default the app connects to a local Postgres instance (`localhost:5432`, user `postgres`, database `postgres`) — adjust `src/configs/db.config.js` if your setup differs.
+
+Run the server:
+
+```bash
+npm start
+```
+
+The API listens on port `3000` by default (override with the `PORT` env var).
+
+## Tests
+
+```bash
+npm test
+```
+
+Tests run against an in-memory SQLite database, so no Postgres instance or `.env` file is required to run them.
+
+## Project structure
+
+```
+src/
+├── configs/       # DB and env configuration
+├── controllers/   # Route handlers
+├── helpers/       # Input validation helpers
+├── middlewares/   # Auth middleware
+├── models/        # Sequelize models
+├── routes/        # Express route definitions
+└── services/      # Auth/token services
+```
+
+## Main routes
+
+- `auth` — login, admin login, register
+- `user` — user profile and password management
+- `book`, `books` — book CRUD and reading-status lists (wanted/reading/read/archived)
+- `readinglogs` — reading session logs
+- `goal` — daily/yearly reading goals
+- `settings` — user notification settings
+- `stats` — reading streak and stats
+- `logs` — activity logs

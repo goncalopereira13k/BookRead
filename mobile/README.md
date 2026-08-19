@@ -1,6 +1,14 @@
-# BookRead
+# BookRead — Mobile
 
-A new Flutter project.
+Flutter client for BookRead.
+
+## Configuration
+
+The API base URL defaults to `http://localhost:3000`. To point the app at a different backend (e.g. a machine on your LAN when testing on a physical device), pass it at run/build time:
+
+```bash
+flutter run --dart-define=API_BASE_URL=http://192.168.1.10:3000
+```
 
 ## Getting Started
 

@@ -1,17 +1,18 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
-  "homepage": "https://bitbucket.org/2221847/api#readme",
+  "description": "Backend REST API for BookRead.",
+  "homepage": "https://github.com/goncalopereira13k/BookRead/tree/main/api#readme",
   "bugs": {
-    "url": "https://bitbucket.org/2221847/api/issues"
+    "url": "https://github.com/goncalopereira13k/BookRead/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/2221847/api.git"
+    "url": "git+https://github.com/goncalopereira13k/BookRead.git",
+    "directory": "api"
   },
-  "license": "ISC",
-  "author": "",
+  "license": "MIT",
+  "author": "Gonçalo Pereira, Diogo Correia",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {

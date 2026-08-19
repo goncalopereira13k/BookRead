@@ -1,7 +1,12 @@
 import 'package:bookread/models/book.dart';
 
 mixin ApiPaths {
-  static const String baseUrl = 'http://192.168.1.86:3000';
+  // Override at build/run time, e.g.:
+  //   flutter run --dart-define=API_BASE_URL=http://192.168.1.10:3000
+  static const String baseUrl = String.fromEnvironment(
+    'API_BASE_URL',
+    defaultValue: 'http://localhost:3000',
+  );
 
   // Authentication
   static String login() {
