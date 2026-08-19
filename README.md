@@ -37,11 +37,10 @@ The project is split into three independent apps that share one backend:
 
 ## Architecture
 
-```
-mobile (Flutter)   ─┐
-                     ├─▶  api (Express + PostgreSQL)
-web-backoffice (Next)┘
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./docs/architecture-dark.svg">
+  <img src="./docs/architecture-light.svg" alt="BookRead architecture: Mobile App (Flutter) and Web Backoffice (Next.js) both call the BookRead API (Express, JWT auth) over REST, which persists to PostgreSQL via Sequelize.">
+</picture>
 
 Both clients talk to the same REST API. The mobile app is the primary user-facing product; the web backoffice is an internal admin tool for managing books, users and reading data.
 
