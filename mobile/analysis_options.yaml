@@ -1,0 +1,51 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    use_build_context_synchronously: ignore
+
+linter:
+  rules:
+    # Make constructors the first thing in every class
+    sort_constructors_first: true
+
+    # The new tabs vs. spaces. Choose wisely
+    prefer_single_quotes: true
+    prefer_double_quotes: false
+
+    # Blindly follow the Flutter code style, which prefers types everywhere
+    always_specify_types: false
+
+    # Back to the 80s
+    lines_longer_than_80_chars: false
+
+    # Use parameter order as in json response
+    always_put_required_named_parameters_first: false
+
+    # Util classes are awesome!
+    avoid_classes_with_only_static_members: false
+
+    # Avoid relative imports for files in lib/
+    always_use_package_imports: true
+    avoid_relative_lib_imports: true
+
+    # Avoid print calls in production code
+    avoid_print: true
+
+    # Avoid redundant argument values
+    avoid_redundant_argument_values: true
+
+    # Name source files using lowercase_with_underscores
+    file_names: true
+
+    # No await no async.
+    unnecessary_async: true
+
+    # Unnecessary await keyword in return
+    unnecessary_await_in_return: true
+
+    # Don't specify the late modifier when it is not needed
+    unnecessary_late: true
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options

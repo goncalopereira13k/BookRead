@@ -1,0 +1,20 @@
+/* Add styles for the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust the width as needed */
+  height: 100vh;
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+  z-index: 2; /* Ensure the sidebar has a higher z-index than the Navbar */
+}
+
+/* Adjust the body padding to account for the sidebar */
+body.main-page {
+  padding-left: 250px; /* Adjust the padding to match the sidebar width */
+}
+
+/* Ensure the Navbar has a lower z-index than the sidebar */
+.navbar {
+  z-index: 1;
+}

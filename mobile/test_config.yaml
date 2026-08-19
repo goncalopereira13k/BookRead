@@ -1,0 +1,121 @@
+# Test configuration for Flutter app
+# This file defines test-specific settings and patterns
+
+# Test discovery patterns
+test_discovery:
+  patterns:
+    - "test/**/*_test.dart"
+    - "integration_test/**/*_test.dart"
+
+# Test execution settings
+test_execution:
+  timeout: 300 # 5 minutes
+  concurrency: 4
+  platforms:
+    - vm
+    - chrome
+
+# Coverage settings
+coverage:
+  minimum_coverage: 80
+  exclude:
+    - "lib/generated/**"
+    - "lib/**/*.g.dart"
+    - "lib/**/*.freezed.dart"
+    - "lib/main.dart"
+    - "lib/firebase_options.dart"
+
+# Test reporting
+reporting:
+  formats:
+    - console
+    - json
+    - lcov
+  output_directory: "coverage"
+
+# Environment variables for testing
+environment:
+  FLUTTER_TEST: "true"
+  API_BASE_URL: "https://api-test.example.com"
+
+# Mock settings
+mocks:
+  generate_mocks: true
+  mock_packages:
+    - http
+    - shared_preferences
+    - flutter_secure_storage
+    - audioplayers
+    - flutter_local_notifications
+
+# Test groups
+test_groups:
+  unit:
+    - "test/models/**"
+    - "test/services/**"
+    - "test/utilities/**"
+    - "test/providers/**"
+
+  widget:
+    - "test/components/**"
+    - "test/screens/**"
+
+  integration:
+    - "integration_test/**"
+
+# Performance test settings
+performance:
+  enable_timeline: true
+  memory_profiling: true
+  frame_rate_monitoring: true
+
+# Test data
+test_data:
+  fixtures_path: "test/fixtures"
+  mock_data_path: "test/mock_data"
+
+# Device testing
+device_testing:
+  ios_simulators:
+    - iPhone 15 Pro
+    - iPhone 15
+    - iPad Pro (12.9-inch)
+
+  android_emulators:
+    - Pixel 7 Pro
+    - Pixel 7
+    - Nexus 10
+
+  real_devices:
+    - auto_detect: true
+
+# Test maintenance
+maintenance:
+  clean_test_cache: true
+  update_golden_files: false
+  report_flaky_tests: true
+
+# Debugging
+debugging:
+  verbose_output: false
+  debug_prints: false
+  stack_trace_format: "full"
+
+# Accessibility testing
+accessibility:
+  enable_semantic_checks: true
+  contrast_ratio_checks: true
+  font_size_checks: true
+
+# Localization testing
+localization:
+  test_all_locales: true
+  supported_locales:
+    - en
+    - pt
+
+# Security testing
+security:
+  check_sensitive_data: true
+  validate_permissions: true
+  test_data_encryption: true

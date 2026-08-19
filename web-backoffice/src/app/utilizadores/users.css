@@ -1,0 +1,37 @@
+.user-role-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.user-role-admin {
+  background-color: #6f42c1; /* roxo */
+}
+
+.user-role-user {
+  background-color: #0d6efd; /* azul */
+}
+
+.user-role-moderator {
+  background-color: #20c997; /* verde */
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* Card enhancements */
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}

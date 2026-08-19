@@ -1,0 +1,30 @@
+:root {
+  --background: #ffffff;
+  --foreground: #242426;
+  --primary-color: #ec8484;
+  --purple-bg: #8c54f3;
+  --linear-gradient: linear-gradient(135deg, rgb(143, 80, 245), rgb(245, 55, 182));
+}
+
+.main-content{
+  padding-top: 70px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ec8484;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}

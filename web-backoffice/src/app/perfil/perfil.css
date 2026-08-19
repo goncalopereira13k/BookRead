@@ -1,0 +1,82 @@
+.perfil-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.perfil-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.10);
+  padding: 40px 32px 32px 32px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.perfil-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 18px auto;
+  border-radius: 50%;
+  background: #6366f1;
+  color: #fff;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 12px rgba(99,102,241,0.12);
+}
+
+.perfil-nome {
+  margin-bottom: 16px;
+  color: #3730a3;
+}
+
+.perfil-info {
+  text-align: left;
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.perfil-info strong {
+  color: #6366f1;
+  font-weight: 500;
+}
+
+.perfil-voltar {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.perfil-voltar:hover {
+  background: #4338ca;
+}
+
+.perfil-loading {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-form input,
+.perfil-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+

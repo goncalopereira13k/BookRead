@@ -1,0 +1,22 @@
+# This root .gitignore only covers files living directly in the repo root.
+# Each subproject (api/, web-backoffice/, mobile/) has its own .gitignore
+# for its dependencies and build artifacts.
+
+# Presentation / deliverable files (kept locally, not in git)
+*.mp4
+*.mov
+*.avi
+Parecer_BookRead_signed_signed.pdf
+poster.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Env files, just in case
+.env
+.env.*

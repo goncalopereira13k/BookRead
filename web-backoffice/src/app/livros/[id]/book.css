@@ -1,0 +1,57 @@
+.books-page {
+padding: 2rem;
+text-align: center;
+}
+
+.book-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+gap: 1.5rem;
+margin-top: 2rem;
+}
+
+.book-card {
+cursor: pointer;
+transition: transform 0.2s ease;
+background: white;
+padding: 0.5rem;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.book-card:hover {
+transform: scale(1.05);
+}
+
+.book-card img {
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+.book-detail {
+max-width: 600px;
+margin: 2rem auto;
+padding: 1rem;
+text-align: center;
+}
+
+.book-detail .cover {
+max-height: 320px;
+margin-bottom: 1rem;
+}
+
+.back-btn {
+margin-top: 2rem;
+padding: 0.6rem 1.2rem;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+background-color: #0056b3;
+}
